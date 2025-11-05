@@ -1,4 +1,9 @@
 public class GovernmentSystem {
+
+    public static void showDepartmentMessage(GovernmentDepartment department) {
+        System.out.println("Managing department: " + department.getName() + " efficiently.");
+    }
+    
     public static void main(String[] args) {
         GovernmentDepartment health = new HealthDepartment("Health Ministry", 500.0, 120);
         GovernmentDepartment education = new EducationDepartment("Education Ministry", 300.0, 1500);
