@@ -5,7 +5,9 @@ class HealthDepartment extends GovernmentDepartment {
         super(name, budget);
         this.numberOfHospitals = numberOfHospitals;
     }
-
+    public void showHealthServiceMessage() {
+        System.out.println("The " + departmentName + " is working to improve public healthcare services.");
+    }
     @Override
     void displayDetails() {
         System.out.println("Department: " + departmentName);
