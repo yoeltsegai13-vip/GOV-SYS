@@ -5,7 +5,9 @@ class EducationDepartment extends GovernmentDepartment {
         super(name, budget);
         this.numberOfSchools = numberOfSchools;
     }
-
+    public void showEducationMessage() {
+        System.out.println("The " + departmentName + " is working to improve education quality nationwide.");
+    }
     @Override
     void displayDetails() {
         System.out.println("Department: " + departmentName);
