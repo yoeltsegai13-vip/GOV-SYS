@@ -8,6 +8,14 @@
         this.budget = budget;
     }
 
+     public String getDepartmentName() {
+         return departmentName;
+     }
+     
+     public void showBudgetInfo() {
+         System.out.println(departmentName + " has a total budget of $" + budget + " million.");
+     }
+
     // Abstract method to display department info
     abstract void displayDetails();
 
