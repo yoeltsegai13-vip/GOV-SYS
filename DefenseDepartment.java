@@ -5,7 +5,10 @@ class DefenseDepartment extends GovernmentDepartment {
         super(name, budget);
         this.numberOfSoldiers = numberOfSoldiers;
     }
-
+    public void showDefenseMessage() {
+        System.out.println("The " + departmentName + " is committed to national security and defense.");
+    }
+    
     @Override
     void displayDetails() {
         System.out.println("Department: " + departmentName);
